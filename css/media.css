@@ -1,0 +1,189 @@
+@media all and (max-width: 1300px){
+
+	/* TOP MENU */
+	#topNav ul{
+		font-size: 20px;
+		}
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 1024px){
+
+	/* TOP MENU */
+	#topNav ul{
+		font-size: 15px;
+		}
+}
+
+
+
+@media all and (max-width: 900px){
+	.headerSliderContainer p{
+		width: 80.4%;
+		}
+}
+
+
+
+
+
+
+@media all and (max-width: 768px){
+	
+	/* HEADER */
+	#header adress{
+		display: none;
+		}
+
+	/* TOP MENU */
+	.openMenu{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		background: url(../images/topMenu/buttonTopMenu.png) no-repeat;
+		width: 65px;
+    	height: 57px;
+    	margin-left: 2px;
+    	margin-top: 2px;
+		}
+
+	.openMenu:hover{
+		background-position: 0 -56px;
+		}
+
+	.topNav.active{
+		flex-direction: column;
+		width: 100%;
+		height: 310px;
+		text-align: center;
+		}
+
+	.topNav ul{
+		display: none;
+		width: 100%;
+		left: 0;
+		}
+
+	.topNav ul.active{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		}
+
+	.topNav ul li{
+		width: 100%;
+		height: 50px;
+
+		}
+
+	.topNav ul li span{
+		height: 50px;
+		font-size: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		}
+
+
+
+
+	/* SLIDER POPULAR PRODUCT */
+	/* HEADER SLIDER */
+	.headerSliderContainer p{
+		font-size: 25px;
+		width: 65.5%;
+		}
+
+
+	.slider{
+		max-width: 65%;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 480px){
+	
+	/* TOP MENU */
+	.topNav{
+		margin-bottom: 0;
+		}
+
+
+	/* SLIDER POPULAR PRODUCT */
+	/* HEADER SLIDER */	
+	.headerSliderContainer p{
+		font-size: 20px;
+		width: 100%;
+		border-radius: 0;
+		}
+
+	.slider{
+		width: 300px;
+		border: none;
+		}
+		
+
+
+
+}
+
+
+@media all and (max-width: 460px){
+	
+	/* SLIDER POPULAR PRODUCT */
+	/* HEADER SLIDER */	
+	.slider{
+		width: 200px;
+		border: none;
+		}
+	
+	.slide{
+		width: 200px;
+		height: 200px;
+		border: none;
+		}
+
+	.buttonTopMenuLeft, .buttonTopMenuRight{
+		width: 25px;
+		height: 94px;
+		}
+
+	.buttonTopMenuLeft{
+		background: url('../images/sliderTopMenu/arrowLeft460px.png') no-repeat;
+		}
+
+	.buttonTopMenuRight{
+		background: url('../images/sliderTopMenu/arrowRight460px.png') no-repeat;
+		}
+}
+
+
+
+
+
+
+@media all and (max-width: 320px){
+	
+	/* SLIDER POPULAR PRODUCT */
+	/* HEADER SLIDER */	
+	.headerSliderContainer p{
+		font-size: 15px;
+		}
+
+}

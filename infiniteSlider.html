@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Untitled</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+  #top_services {
+    width: 800px;
+    margin: 30px auto;
+    height: 550px;
+    background-color: #804e49;
+    border-radius: 5px;
+    border: 2px solid #db5461;
+    overflow: hidden;
+
+}
+
+.top_blocks {
+
+    width: 30%;
+    margin-left: 2%;
+    height: 500px;
+    background-color: #e7ac9c;
+    margin-top: 20px;
+    overflow: hidden;
+    transition: 1s;
+    border: 2px solid #db5461;
+}
+
+
+
+.top_blocks_img {
+    width: 99.9%;
+    height: 210px;
+    background-color: #e3a7b1;
+    margin: 0 auto;
+    border-bottom: 2px solid #db5461;
+}
+
+.top_blocks_img img {
+    width: 100%;
+    height: 100%;
+   }
+.roulette {
+    display: flex;
+    width: 130%;
+
+}
+
+.roulette.active .top_blocks:nth-child(1){
+    opacity: 0;
+}
+.roulette.active {
+  transition: .8s 1s;
+  transform:  translateX(-25%);
+}
+
+  </style>
+
+  <script>
+
+  </script>
+</head>
+
+<body>
+<div id="top_services"><div class="roulette">
+
+         <div class="top_blocks">
+            <div class="top_blocks_img">
+                <img src="https://i.ytimg.com/vi/9aY41D-ECsk/maxresdefault.jpg">
+            </div>
+         </div>
+         <div class="top_blocks">
+            <div class="top_blocks_img">
+                <img src="http://99px.ru/sstorage/56/2017/12/mid_289604_687055.jpg">
+            </div>
+
+         </div>
+         <div class="top_blocks">
+            <div class="top_blocks_img">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Canis_lupus_265b.jpg/265px-Canis_lupus_265b.jpg">
+            </div>
+         </div>
+         <div class="top_blocks">
+            <div class="top_blocks_img">
+               <img src="http://bipbap.ru/wp-content/uploads/2017/05/687942_1445680363.jpg">
+            </div>
+
+         </div>
+         </div>
+</div>
+<script>
+ (function move(){
+    var roulette = document.querySelector('.roulette'),
+    top_blocks = roulette.querySelector('.top_blocks');
+    roulette.classList.remove("active");
+    roulette.appendChild(top_blocks);
+     window.setTimeout(move,5000);
+    window.setTimeout(function() {
+    roulette.classList.add("active")
+},1000);
+
+})();
+</script>
+
+
+</body>
+</html>
